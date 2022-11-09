@@ -1121,32 +1121,4 @@
 	</g>
 </g>
 </svg>
-<script src="https://cdn.jsdelivr.net/npm/warpjs@1.0.8/dist/warp.js"></script>
 
-<script>
-	const svg = document.getElementById('svg-element');
-const warp = new Warp(svg);
-
-warp.interpolate(40);
-warp.transform(([x, y]) => [x, y, y]);
-
-let offset = 0;
-function animate()
-{
-  warp.transform(([x, y, oy]) => [x, oy + 60 * Math.sin(x / 200 + offset), oy]);
-  offset += 0.1;
-  requestAnimationFrame(animate);
-}
-
-animate();
-</script>
-
-<style>
-
-#svg-element {
-	margin: 20px;
-	overflow: visible;
-	width: 100vw;
-	height: auto;
-}
-</style>
