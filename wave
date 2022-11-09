@@ -1142,10 +1142,11 @@ animate();
 </script>
 
 <style>
+
 #svg-element {
 	margin: 20px;
 	overflow: visible;
 	width: 100vw;
 	height: auto;
 }
-</style
+</style>
